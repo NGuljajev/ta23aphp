@@ -1,56 +1,18 @@
 <?php
 
 
-function hello() {
-    var_dumb( "Hello, World!");
-}
-
-hello();
-
-function helloName($name='Unknown'){
-    var_dump("Hello" . $name);
-}
-helloName("Nikita");
-helloName();
-
-function helloNameAndAge($name='Unknown', $age){
-    var_dump("Hello . $name and you are $age years old.");
-}
-
-helloNameAndAge("Nikita", 20);
-
-function stuff(...$args){
-    var_dump($args);
-}
-
-stuff(1,2,3,4,5);
-
-function sum($a, $b){
-    return $a + $b;
-    var_dumb('dawdwadawwa');
-}
-
-$result = sum(10, 20);
-var_dump($result);
-
-
-function biggerOrSmaller($a){
-    if($a > 10){
-        return "Bigger";
-    } else {
-        return "Smaller";
+for($i=0;$i<10;$i++){
+    if($i=3){
+        continue;
     }
+    if(i==5){
+        break;
+    }
+    var_dump($i);
 }
 
-var_dump(biggerOrSmaller(5));
-
-
- function recursive($i){
-    if($i < 10){
-     var_dump($i);
-     recursive($i - 1);
-    }
-   
- }
-
- recursive(0);
+for($i=0;$i<10;$i++){
+   for($j=0;$j<10;$j++){
+       break 2;
+   }
+}
