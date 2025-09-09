@@ -1,29 +1,30 @@
 <?php
 
+$array = [1, 2, 3];
+var_dump($array);
+$array = array(1, 2, 3);
+var_dump($array);
+$array = [1, 'hello', 3.5, true, null, [5, 6]];
+var_dump($array);
 
-echo "Hello, World!\n";
-echo ("Hello, World!\n");
 
-$var = 1;
-echo $var;
-echo 'Var is $var';
-echo "Var is $var\n";
-echo $var . "\n";
-$num = 1;
-$num = $num + 1;
-$num++;
-$num--;
-$num += 1;
-$num -= 1;
-$num *= 2;
-$num /= 3;
-$num = 5;
-$num %= 4;
-$num = 1.3;
-$num = 3;
-$num **= 2;
-$num = true;
-$num = false;
-$bar;
-$bar = null;
-var_dump($bar);
+$array = [
+    'name' => 'John',
+    'age' => 30,
+    'gender' => 'penis'
+
+];
+var_dump($array);
+
+
+
+$array = [
+    1,
+    2,
+    3,
+    'name' => 'John',
+    69,
+    'age' => 30,
+    'gender' => 'penis'
+];
+var_dump($array);
