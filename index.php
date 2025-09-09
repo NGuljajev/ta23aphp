@@ -1,44 +1,56 @@
 <?php
 
-for($i=0; $i<10; $i++) {
-    var_dump($i);
+
+function hello() {
+    var_dumb( "Hello, World!");
 }
 
-for($a=10;$a>0;$a--) {
-    var_dump($a);
+hello();
+
+function helloName($name='Unknown'){
+    var_dump("Hello" . $name);
+}
+helloName("Nikita");
+helloName();
+
+function helloNameAndAge($name='Unknown', $age){
+    var_dump("Hello . $name and you are $age years old.");
 }
 
-for($a=1;$a<11111110;$a*=2) {
-    var_dump($a);
+helloNameAndAge("Nikita", 20);
+
+function stuff(...$args){
+    var_dump($args);
 }
 
-$time = time();
-while(time() < $time + 10) {
-    var_dump(time());
-    // wait 1 second
+stuff(1,2,3,4,5);
 
-}
-$i = 10;
-while($i < 10) {
-    var_dump($i);
-}
-do {
-    var_dumb('do');
-} while($i > 10);
-
-$array = [1,2,3,4,5];
-
-foreach($array as $value) {
-    var_dump($value);
+function sum($a, $b){
+    return $a + $b;
+    var_dumb('dawdwadawwa');
 }
 
-$a = 1;
-$b = $a;
-$b = 2;
-var_dump($a);
+$result = sum(10, 20);
+var_dump($result);
 
-$array = [1,2,3,4,5];
-foreach(array as &$value){
-    $value = $value * 2;
+
+function biggerOrSmaller($a){
+    if($a > 10){
+        return "Bigger";
+    } else {
+        return "Smaller";
+    }
 }
-var_dump($array);
+
+var_dump(biggerOrSmaller(5));
+
+
+ function recursive($i){
+    if($i < 10){
+     var_dump($i);
+     recursive($i - 1);
+    }
+   
+ }
+
+ recursive(0);
