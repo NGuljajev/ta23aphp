@@ -1,38 +1,44 @@
 <?php
 
-$num = 15;
-if($num > 10){
-    var_dump("Number is greater than 10");  
-} else if ($num > 10){
-
-} else {
-
+for($i=0; $i<10; $i++) {
+    var_dump($i);
 }
 
-$day = date('w', strtotime('2023-06-15'));
-var_dump($day);
-switch($day){
-    case 0:
-        var_dump("It's Sunday");
-        break;
-    case 1:
-        var_dump("It's Monday");
-        break;
-    case 2:
-        var_dump("It's Tuesday");
-        break;
-    case 3:
-        var_dump("It's Wednesday");
-        break;
-    case 4:
-        var_dump("It's Thursday");
-        break;
-    case 5:
-        var_dump("It's Friday");
-        break;
-    case 6:
-        var_dump("It's Saturday");
-        break;
-    default:
-        var_dump("Invalid day");
+for($a=10;$a>0;$a--) {
+    var_dump($a);
 }
+
+for($a=1;$a<11111110;$a*=2) {
+    var_dump($a);
+}
+
+$time = time();
+while(time() < $time + 10) {
+    var_dump(time());
+    // wait 1 second
+
+}
+$i = 10;
+while($i < 10) {
+    var_dump($i);
+}
+do {
+    var_dumb('do');
+} while($i > 10);
+
+$array = [1,2,3,4,5];
+
+foreach($array as $value) {
+    var_dump($value);
+}
+
+$a = 1;
+$b = $a;
+$b = 2;
+var_dump($a);
+
+$array = [1,2,3,4,5];
+foreach(array as &$value){
+    $value = $value * 2;
+}
+var_dump($array);
