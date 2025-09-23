@@ -7,12 +7,12 @@
   <form action="/answer?color=green&cat=Nuustik" method="POST">
     <div></div>
     <label for="name">Name:
-      <input id="name">
+      <input name="name" id="name">
     </label>
     </div>
     <div>
       <label for="age">Age:</label>
-      <input name="name" id="age">
+      <input name="age" id="age">
     </div>
     <button type="submit">Send</button>
     <input type="submit" value="Clear">
