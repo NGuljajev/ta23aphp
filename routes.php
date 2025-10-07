@@ -2,6 +2,7 @@
 
 use App\Controllers\PostsController;
 use App\Controllers\PublicController;
+use App\Controllers\AuthController;
 use App\Router;
 
 Router::get('/', [PublicController::class, 'index']);
@@ -18,3 +19,6 @@ Router::get('/posts/view', [PostsController::class, 'view']);
 Router::get('/posts/edit', [PostsController::class, 'edit']);
 Router::post('/posts/edit', [PostsController::class, 'update']);
 Router::get('/posts/delete', [PostsController::class, 'destroy']);
+
+
+Router::get('/register', [AuthController::class, 'registerForm']);
